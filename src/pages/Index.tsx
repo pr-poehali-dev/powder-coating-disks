@@ -10,6 +10,7 @@ import { useToast } from '@/hooks/use-toast';
 
 export default function Index() {
   const { toast } = useToast();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -17,18 +18,48 @@ export default function Index() {
     date: '',
     comment: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Заявка отправлена!",
-      description: "Мы свяжемся с вами в ближайшее время.",
-    });
-    setFormData({ name: '', phone: '', service: '', date: '', comment: '' });
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('https://functions.poehali.dev/a737aba3-9201-4603-bc77-adc268cf2ef0', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        toast({
+          title: "Заявка отправлена!",
+          description: "Мы свяжемся с вами в ближайшее время.",
+        });
+        setFormData({ name: '', phone: '', service: '', date: '', comment: '' });
+      } else {
+        toast({
+          title: "Ошибка",
+          description: "Не удалось отправить заявку. Попробуйте позже.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Ошибка",
+        description: "Не удалось отправить заявку. Попробуйте позже.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -49,10 +80,35 @@ export default function Index() {
             <button onClick={() => scrollToSection('reviews')} className="hover:text-primary transition">Отзывы</button>
             <button onClick={() => scrollToSection('booking')} className="hover:text-primary transition">Контакты</button>
           </div>
-          <Button onClick={() => scrollToSection('booking')} className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Записаться
-          </Button>
+          <div className="flex items-center gap-3">
+            <Button onClick={() => scrollToSection('booking')} className="hidden md:flex bg-primary hover:bg-primary/90 text-primary-foreground">
+              Записаться
+            </Button>
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2"
+              aria-label="Toggle menu"
+            >
+              <Icon name={mobileMenuOpen ? "X" : "Menu"} size={28} />
+            </button>
+          </div>
         </div>
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-background border-t border-border animate-fade-in">
+            <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
+              <button onClick={() => scrollToSection('services')} className="text-left py-2 hover:text-primary transition">Услуги</button>
+              <button onClick={() => scrollToSection('portfolio')} className="text-left py-2 hover:text-primary transition">Портфолио</button>
+              <button onClick={() => scrollToSection('about')} className="text-left py-2 hover:text-primary transition">О студии</button>
+              <button onClick={() => scrollToSection('technology')} className="text-left py-2 hover:text-primary transition">Технология</button>
+              <button onClick={() => scrollToSection('prices')} className="text-left py-2 hover:text-primary transition">Цены</button>
+              <button onClick={() => scrollToSection('reviews')} className="text-left py-2 hover:text-primary transition">Отзывы</button>
+              <button onClick={() => scrollToSection('booking')} className="text-left py-2 hover:text-primary transition">Контакты</button>
+              <Button onClick={() => scrollToSection('booking')} className="w-full mt-2 bg-primary hover:bg-primary/90 text-primary-foreground">
+                Записаться
+              </Button>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
@@ -524,8 +580,13 @@ export default function Index() {
                     rows={4}
                   />
                 </div>
-                <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" size="lg">
-                  Отправить заявку
+                <Button 
+                  type="submit" 
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" 
+                  size="lg"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Отправка...' : 'Отправить заявку'}
                 </Button>
               </form>
             </CardContent>

@@ -1,0 +1,23 @@
+{
+  "tests": [
+    {
+      "name": "Create new booking",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "name": "Иван Тестовый",
+        "phone": "+7 (999) 123-45-67",
+        "service": "powder",
+        "date": "2024-12-30",
+        "comment": "Тестовая заявка"
+      },
+      "expectedStatus": 201
+    },
+    {
+      "name": "Get all bookings",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200
+    }
+  ]
+}
