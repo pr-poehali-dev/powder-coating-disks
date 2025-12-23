@@ -133,12 +133,12 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 max-w-4xl mx-auto">
             <div className="text-center">
               <Icon name="Award" className="mx-auto mb-4 text-primary" size={48} />
-              <h3 className="text-3xl font-bold mb-2">8+ лет</h3>
+              <h3 className="text-3xl font-bold mb-2">5+ лет</h3>
               <p className="text-muted-foreground">на рынке</p>
             </div>
             <div className="text-center">
               <Icon name="Users" className="mx-auto mb-4 text-primary" size={48} />
-              <h3 className="text-3xl font-bold mb-2">5000+</h3>
+              <h3 className="text-3xl font-bold mb-2">1000+</h3>
               <p className="text-muted-foreground">довольных клиентов</p>
             </div>
             <div className="text-center">
@@ -422,7 +422,7 @@ export default function Index() {
               </CardHeader>
               <CardContent className="space-y-2">
                 <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Цветные лаки алмазхром подбор цвета</span>
+                  <span className="text-muted-foreground">Цветные лаки алюмахром подбор цвета</span>
                   <span className="font-semibold">+ 3 000 руб.</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-border">
