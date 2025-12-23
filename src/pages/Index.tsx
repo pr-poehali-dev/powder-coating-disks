@@ -336,7 +336,148 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Prices Section */}
+      <section id="prices" className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Цены</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">Прозрачное ценообразование</p>
+          
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-card rounded-lg overflow-hidden shadow-lg">
+              <thead>
+                <tr className="bg-primary text-primary-foreground">
+                  <th className="p-4 text-left font-bold border border-border">Вид покраски</th>
+                  <th className="p-4 text-center font-bold border border-border" colSpan={9}>Диаметр</th>
+                </tr>
+                <tr className="bg-primary/90 text-primary-foreground">
+                  <th className="p-3 text-left font-semibold border border-border"></th>
+                  <th className="p-3 text-center font-semibold border border-border">до 15</th>
+                  <th className="p-3 text-center font-semibold border border-border">16</th>
+                  <th className="p-3 text-center font-semibold border border-border">17</th>
+                  <th className="p-3 text-center font-semibold border border-border">18</th>
+                  <th className="p-3 text-center font-semibold border border-border">19</th>
+                  <th className="p-3 text-center font-semibold border border-border">20</th>
+                  <th className="p-3 text-center font-semibold border border-border">21</th>
+                  <th className="p-3 text-center font-semibold border border-border">22</th>
+                  <th className="p-3 text-center font-semibold border border-border">23</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="hover:bg-muted/50 transition">
+                  <td className="p-3 border border-border font-medium">В один цвет / комплект (4 шт.)</td>
+                  <td className="p-3 border border-border text-center">9 000</td>
+                  <td className="p-3 border border-border text-center">10 000</td>
+                  <td className="p-3 border border-border text-center">11 000</td>
+                  <td className="p-3 border border-border text-center">12 000</td>
+                  <td className="p-3 border border-border text-center">13 000</td>
+                  <td className="p-3 border border-border text-center">14 000</td>
+                  <td className="p-3 border border-border text-center">16 000</td>
+                  <td className="p-3 border border-border text-center">18 000</td>
+                  <td className="p-3 border border-border text-center">20 000</td>
+                </tr>
+                <tr className="hover:bg-muted/50 transition">
+                  <td className="p-3 border border-border font-medium">С цветным кантом / комплект (4 шт.)</td>
+                  <td className="p-3 border border-border text-center">13 000</td>
+                  <td className="p-3 border border-border text-center">14 000</td>
+                  <td className="p-3 border border-border text-center">15 000</td>
+                  <td className="p-3 border border-border text-center">16 000</td>
+                  <td className="p-3 border border-border text-center">17 000</td>
+                  <td className="p-3 border border-border text-center">18 000</td>
+                  <td className="p-3 border border-border text-center">20 000</td>
+                  <td className="p-3 border border-border text-center">22 000</td>
+                  <td className="p-3 border border-border text-center">24 000</td>
+                </tr>
+                <tr className="hover:bg-muted/50 transition">
+                  <td className="p-3 border border-border font-medium">С алмазной шлифовкой / комплект (4 шт.)</td>
+                  <td className="p-3 border border-border text-center">19 000</td>
+                  <td className="p-3 border border-border text-center">20 000</td>
+                  <td className="p-3 border border-border text-center">21 000</td>
+                  <td className="p-3 border border-border text-center">22 000</td>
+                  <td className="p-3 border border-border text-center">23 000</td>
+                  <td className="p-3 border border-border text-center">24 000</td>
+                  <td className="p-3 border border-border text-center">25 000</td>
+                  <td className="p-3 border border-border text-center">26 000</td>
+                  <td className="p-3 border border-border text-center">27 000</td>
+                </tr>
+                <tr className="bg-muted/30">
+                  <td className="p-3 border border-border font-medium">1 диск</td>
+                  <td colSpan={9} className="p-3 border border-border text-right text-muted-foreground">35%</td>
+                </tr>
+                <tr className="bg-muted/30">
+                  <td className="p-3 border border-border font-medium">2 диска</td>
+                  <td colSpan={9} className="p-3 border border-border text-right text-muted-foreground">60%</td>
+                </tr>
+                <tr className="bg-muted/30">
+                  <td className="p-3 border border-border font-medium">3 диска</td>
+                  <td colSpan={9} className="p-3 border border-border text-right text-muted-foreground">80%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
+          <div className="mt-12 grid md:grid-cols-2 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-xl text-primary">Дополнительно:</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Цветные лаки алмазхром подбор цвета</span>
+                  <span className="font-semibold">+ 3 000 руб.</span>
+                </div>
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Высверливание фаджик болтов</span>
+                  <span className="font-semibold">+ 1 000 руб.</span>
+                </div>
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Удаление хрома с пластиковых колпачков / шт.</span>
+                  <span className="font-semibold">500 руб.</span>
+                </div>
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Снятие / Установка датчиков</span>
+                  <span className="font-semibold">1500 руб.</span>
+                </div>
+                <div className="flex justify-between py-2">
+                  <span className="text-muted-foreground">Удаление хрома / комплект (4 шт.)</span>
+                  <span className="font-semibold">12 000 руб.</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-xl text-primary">Стоимость покраски деталей:</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Покраска алюминиевых колпачков 4 шт.</span>
+                  <span className="font-semibold">2 500 руб.</span>
+                </div>
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Покраска суппортов (1 ось / 2 суппорта и 2 скобы)</span>
+                  <span className="font-semibold">6 000 руб.</span>
+                </div>
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Нанесение логотипа на суппорта</span>
+                  <span className="font-semibold">2 000 руб.</span>
+                </div>
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Покраска дворников 2 шт.</span>
+                  <span className="font-semibold">2 500 руб.</span>
+                </div>
+                <div className="flex justify-between py-2">
+                  <span className="text-muted-foreground">Покраска выхлопных насадок</span>
+                  <span className="font-semibold">от 1 500 руб.</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-muted-foreground text-sm">* Ранее окрашенные диски порошком сливка от 5 000 руб.</p>
+          </div>
+        </div>
+      </section>
 
       {/* Reviews Section */}
       <section id="reviews" className="py-20 px-4">
