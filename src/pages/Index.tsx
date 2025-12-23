@@ -163,14 +163,6 @@ export default function Index() {
                 <CardDescription>Высокопрочное полимерное покрытие с идеальным глянцем</CardDescription>
               </CardHeader>
             </Card>
-
-            <Card className="hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
-              <CardHeader>
-                <Icon name="Zap" className="mb-4 text-primary" size={40} />
-                <CardTitle>Хромирование</CardTitle>
-                <CardDescription>Зеркальное покрытие премиум-класса</CardDescription>
-              </CardHeader>
-            </Card>
             <Card className="hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <CardHeader>
                 <Icon name="Wrench" className="mb-4 text-primary" size={40} />
