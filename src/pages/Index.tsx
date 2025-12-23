@@ -426,7 +426,7 @@ export default function Index() {
                   <span className="font-semibold">+ 3 000 руб.</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Высверливание фаджик болтов</span>
+                  <span className="text-muted-foreground">Высверливание фальш болтов</span>
                   <span className="font-semibold">+ 1 000 руб.</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-border">
