@@ -399,9 +399,17 @@ export default function Index() {
                   <span className="text-muted-foreground">Высверливание фальш болтов</span>
                   <span className="font-semibold">+ 1 000 руб.</span>
                 </div>
-                <div className="flex justify-between py-2">
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Удаление хрома с пластиковых колпачков / шт.</span>
+                  <span className="font-semibold">500 руб.</span>
+                </div>
+                <div className="flex justify-between py-2 border-b border-border">
                   <span className="text-muted-foreground">Снятие / Установка датчиков</span>
                   <span className="font-semibold">1500 руб.</span>
+                </div>
+                <div className="flex justify-between py-2">
+                  <span className="text-muted-foreground">Удаление хрома / комплект (4 шт.)</span>
+                  <span className="font-semibold">12 000 руб.</span>
                 </div>
               </CardContent>
             </Card>
