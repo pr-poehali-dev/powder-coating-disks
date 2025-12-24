@@ -586,7 +586,7 @@ export default function Index() {
               <div className="space-y-3 text-muted-foreground">
                 <div className="flex items-start gap-2">
                   <Icon name="MapPin" className="text-primary mt-1" size={18} />
-                  <span>м. Домодедовская, АТЦ "Москва"</span>
+                  <span>м. Домодедовская, АТЦ "Москва" Каширское шоссе 61 корп. 3А</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Phone" className="text-primary" size={18} />
