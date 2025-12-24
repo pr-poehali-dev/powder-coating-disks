@@ -5,11 +5,11 @@ export default function ServicesSection() {
   return (
     <>
       {/* Services Section */}
-      <section id="services" className="py-20 px-4 bg-muted/30">
+      <section id="services" className="py-12 sm:py-16 md:py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Наши услуги</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Полный спектр работ по окраске дисков</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4">Наши услуги</h2>
+          <p className="text-center text-muted-foreground mb-8 sm:mb-12 text-base sm:text-lg px-4">Полный спектр работ по окраске дисков</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <Card className="hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <CardHeader>
                 <Icon name="Sparkles" className="mb-4 text-primary" size={40} />
@@ -43,11 +43,11 @@ export default function ServicesSection() {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 px-4">
+      <section id="portfolio" className="py-12 sm:py-16 md:py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Покрытия</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Варианты окраски</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4">Покрытия</h2>
+          <p className="text-center text-muted-foreground mb-8 sm:mb-12 text-base sm:text-lg px-4">Варианты окраски</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300">
               <div className="aspect-square relative overflow-hidden">
                 <img
@@ -131,40 +131,40 @@ export default function ServicesSection() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 bg-muted/30">
+      <section id="about" className="py-12 sm:py-16 md:py-20 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">О студии</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4">О студии</h2>
+          <p className="text-center text-muted-foreground mb-8 sm:mb-12 text-base sm:text-lg max-w-3xl mx-auto px-4">
             Яркие Диски — это команда профессионалов с многолетним опытом в порошковой окраске дисков. 
             Мы используем только сертифицированные материалы европейского производства и современное оборудование.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <Card className="text-center hover:border-primary transition-all">
               <CardHeader>
-                <Icon name="CheckCircle2" className="mx-auto mb-4 text-primary" size={48} />
-                <CardTitle className="text-2xl">Качество</CardTitle>
-                <CardDescription className="text-base">Европейские порошковые краски премиум-класса</CardDescription>
+                <Icon name="CheckCircle2" className="mx-auto mb-3 sm:mb-4 text-primary" size={40} />
+                <CardTitle className="text-xl sm:text-2xl">Качество</CardTitle>
+                <CardDescription className="text-sm sm:text-base">Европейские порошковые краски премиум-класса</CardDescription>
               </CardHeader>
             </Card>
             <Card className="text-center hover:border-primary transition-all">
               <CardHeader>
-                <Icon name="Zap" className="mx-auto mb-4 text-primary" size={48} />
-                <CardTitle className="text-2xl">Скорость</CardTitle>
-                <CardDescription className="text-base">Стандартный срок работы — 3-5 дней</CardDescription>
+                <Icon name="Zap" className="mx-auto mb-3 sm:mb-4 text-primary" size={40} />
+                <CardTitle className="text-xl sm:text-2xl">Скорость</CardTitle>
+                <CardDescription className="text-sm sm:text-base">Стандартный срок работы — 3-5 дней</CardDescription>
               </CardHeader>
             </Card>
             <Card className="text-center hover:border-primary transition-all">
               <CardHeader>
-                <Icon name="Shield" className="mx-auto mb-4 text-primary" size={48} />
-                <CardTitle className="text-2xl">Гарантия</CardTitle>
-                <CardDescription className="text-base">3 года на покрытие при соблюдении условий эксплуатации</CardDescription>
+                <Icon name="Shield" className="mx-auto mb-3 sm:mb-4 text-primary" size={40} />
+                <CardTitle className="text-xl sm:text-2xl">Гарантия</CardTitle>
+                <CardDescription className="text-sm sm:text-base">3 года на покрытие при соблюдении условий эксплуатации</CardDescription>
               </CardHeader>
             </Card>
             <Card className="text-center hover:border-primary transition-all">
               <CardHeader>
-                <Icon name="ThumbsUp" className="mx-auto mb-4 text-primary" size={48} />
-                <CardTitle className="text-2xl">Опыт</CardTitle>
-                <CardDescription className="text-base">Более 1000 успешно выполненных проектов</CardDescription>
+                <Icon name="ThumbsUp" className="mx-auto mb-3 sm:mb-4 text-primary" size={40} />
+                <CardTitle className="text-xl sm:text-2xl">Опыт</CardTitle>
+                <CardDescription className="text-sm sm:text-base">Более 1000 успешно выполненных проектов</CardDescription>
               </CardHeader>
             </Card>
           </div>
@@ -172,11 +172,11 @@ export default function ServicesSection() {
       </section>
 
       {/* Technology Section */}
-      <section id="technology" className="py-20 px-4">
+      <section id="technology" className="py-12 sm:py-16 md:py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Технология окраски</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Как мы создаём идеальное покрытие</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-3 sm:mb-4">Технология окраски</h2>
+          <p className="text-center text-muted-foreground mb-8 sm:mb-12 text-base sm:text-lg px-4">Как мы создаём идеальное покрытие</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <Card className="hover:border-primary transition-all">
               <CardHeader>
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
