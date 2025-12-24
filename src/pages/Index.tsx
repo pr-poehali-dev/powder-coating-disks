@@ -149,8 +149,8 @@ export default function Index() {
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Портфолио</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Примеры наших работ</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Покрытия</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">Варианты окраски</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="group relative overflow-hidden rounded-lg aspect-square">
               <img 
