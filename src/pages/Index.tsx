@@ -181,12 +181,12 @@ export default function Index() {
             <div className="group relative overflow-hidden rounded-lg aspect-square">
               <img 
                 src="https://cdn.poehali.dev/projects/39e5a194-0688-4d64-83fb-ccd68437310a/files/d27003a7-8f65-4e3e-b759-511d0f503743.jpg" 
-                alt="Серебряная хромированная окраска диска"
+                alt="Серебряная порошковая окраска диска"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Серебро хром</h3>
+                  <h3 className="text-xl font-bold mb-2">Серебро металлик</h3>
                   <p className="text-muted-foreground">Классика</p>
                 </div>
               </div>
@@ -391,25 +391,16 @@ export default function Index() {
                 <CardTitle className="text-xl text-primary">Дополнительно:</CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Цветные лаки алюмахром подбор цвета</span>
-                  <span className="font-semibold">+ 3 000 руб.</span>
-                </div>
+
                 <div className="flex justify-between py-2 border-b border-border">
                   <span className="text-muted-foreground">Высверливание фальш болтов</span>
                   <span className="font-semibold">+ 1 000 руб.</span>
                 </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Удаление хрома с пластиковых колпачков / шт.</span>
-                  <span className="font-semibold">500 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
+
+
+                <div className="flex justify-between py-2">
                   <span className="text-muted-foreground">Снятие / Установка датчиков</span>
                   <span className="font-semibold">1500 руб.</span>
-                </div>
-                <div className="flex justify-between py-2">
-                  <span className="text-muted-foreground">Удаление хрома / комплект (4 шт.)</span>
-                  <span className="font-semibold">12 000 руб.</span>
                 </div>
               </CardContent>
             </Card>
