@@ -197,10 +197,10 @@ export default function Index() {
 
       {/* About Section */}
       <section id="about" className="py-20 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">О студии</h2>
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div className="order-2 md:order-1">
               <h3 className="text-2xl font-bold mb-4 text-primary">Яркие Диски</h3>
               <p className="text-lg text-muted-foreground mb-4">
                 Мы специализируемся на премиальной порошковой окраске автомобильных дисков с 2016 года. 
@@ -215,35 +215,47 @@ export default function Index() {
                 и предоставляем гарантию 3 года на все виды покрытий.
               </p>
             </div>
-            <div className="space-y-4">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3">
-                    <Icon name="Trophy" className="text-primary" size={28} />
-                    Качество
-                  </CardTitle>
-                  <CardDescription>Европейские материалы и технологии</CardDescription>
-                </CardHeader>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3">
-                    <Icon name="Clock" className="text-primary" size={28} />
-                    Скорость
-                  </CardTitle>
-                  <CardDescription>Окраска за 2-3 дня с момента приёма</CardDescription>
-                </CardHeader>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-3">
-                    <Icon name="Heart" className="text-primary" size={28} />
-                    Сервис
-                  </CardTitle>
-                  <CardDescription>Индивидуальный подход к каждому клиенту</CardDescription>
-                </CardHeader>
-              </Card>
+            <div className="order-1 md:order-2 flex justify-center">
+              <div className="relative w-full max-w-md">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl blur-3xl"></div>
+                <div className="relative bg-gradient-to-br from-background to-muted border border-primary/20 rounded-3xl p-8 shadow-2xl">
+                  <img 
+                    src="https://cdn.poehali.dev/files/GigaChat (31).jpg" 
+                    alt="Яркие Диски - Логотип студии"
+                    className="w-full h-auto rounded-2xl"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <Icon name="Trophy" className="text-primary" size={28} />
+                  Качество
+                </CardTitle>
+                <CardDescription>Европейские материалы и технологии</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <Icon name="Clock" className="text-primary" size={28} />
+                  Скорость
+                </CardTitle>
+                <CardDescription>Окраска за 2-3 дня с момента приёма</CardDescription>
+              </CardHeader>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3">
+                  <Icon name="Heart" className="text-primary" size={28} />
+                  Сервис
+                </CardTitle>
+                <CardDescription>Индивидуальный подход к каждому клиенту</CardDescription>
+              </CardHeader>
+            </Card>
           </div>
         </div>
       </section>
