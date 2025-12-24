@@ -1,61 +1,10 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import Icon from '@/components/ui/icon';
-import { useToast } from '@/hooks/use-toast';
 
 export default function Index() {
-  const { toast } = useToast();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    service: '',
-    date: '',
-    comment: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      const response = await fetch('https://functions.poehali.dev/a737aba3-9201-4603-bc77-adc268cf2ef0', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      
-      if (response.ok) {
-        toast({
-          title: "Заявка отправлена!",
-          description: "Мы свяжемся с вами в ближайшее время.",
-        });
-        setFormData({ name: '', phone: '', service: '', date: '', comment: '' });
-      } else {
-        toast({
-          title: "Ошибка",
-          description: "Не удалось отправить заявку. Попробуйте позже.",
-          variant: "destructive",
-        });
-      }
-    } catch (error) {
-      toast({
-        title: "Ошибка",
-        description: "Не удалось отправить заявку. Попробуйте позже.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -81,8 +30,11 @@ export default function Index() {
             <button onClick={() => scrollToSection('booking')} className="hover:text-primary transition">Контакты</button>
           </div>
           <div className="flex items-center gap-3">
-            <Button onClick={() => scrollToSection('booking')} className="hidden md:flex bg-primary hover:bg-primary/90 text-primary-foreground">
-              Записаться
+            <Button asChild className="hidden md:flex bg-primary hover:bg-primary/90 text-primary-foreground">
+              <a href="https://t.me/yarkiediski" target="_blank" rel="noopener noreferrer">
+                <Icon name="Send" className="mr-2" size={18} />
+                Записаться
+              </a>
             </Button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -103,8 +55,11 @@ export default function Index() {
               <button onClick={() => scrollToSection('prices')} className="text-left py-2 hover:text-primary transition">Цены</button>
               <button onClick={() => scrollToSection('reviews')} className="text-left py-2 hover:text-primary transition">Отзывы</button>
               <button onClick={() => scrollToSection('booking')} className="text-left py-2 hover:text-primary transition">Контакты</button>
-              <Button onClick={() => scrollToSection('booking')} className="w-full mt-2 bg-primary hover:bg-primary/90 text-primary-foreground">
-                Записаться
+              <Button asChild className="w-full mt-2 bg-primary hover:bg-primary/90 text-primary-foreground">
+                <a href="https://t.me/yarkiediski" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Send" className="mr-2" size={18} />
+                  Записаться
+                </a>
               </Button>
             </div>
           </div>
@@ -123,8 +78,11 @@ export default function Index() {
             м. Домодедовская, АТЦ "Москва"
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button onClick={() => scrollToSection('booking')} size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
-              Записаться онлайн
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8">
+              <a href="https://t.me/yarkiediski" target="_blank" rel="noopener noreferrer">
+                <Icon name="Send" className="mr-2" size={20} />
+                Записаться в Telegram
+              </a>
             </Button>
             <Button onClick={() => scrollToSection('portfolio')} size="lg" variant="outline" className="text-lg px-8">
               Посмотреть работы
@@ -542,97 +500,45 @@ export default function Index() {
       {/* Booking Section */}
       <section id="booking" className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-2xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Онлайн-запись</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Записаться на окраску</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
-            Оставьте заявку, и мы свяжемся с вами для подтверждения
+            Свяжитесь с нами в Telegram для быстрой записи и консультации
           </p>
-          <Card>
-            <CardContent className="pt-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Ваше имя</Label>
-                  <Input 
-                    id="name" 
-                    placeholder="Иван Иванов"
-                    value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Телефон</Label>
-                  <Input 
-                    id="phone" 
-                    type="tel"
-                    placeholder="+7 (999) 123-45-67"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="service">Услуга</Label>
-                  <Select value={formData.service} onValueChange={(value) => setFormData({...formData, service: value})}>
-                    <SelectTrigger id="service">
-                      <SelectValue placeholder="Выберите услугу" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="powder">Порошковая окраска</SelectItem>
-                      <SelectItem value="rubber">Жидкая резина</SelectItem>
-                      <SelectItem value="chrome">Хромирование</SelectItem>
-                      <SelectItem value="repair">Ремонт дисков</SelectItem>
-                      <SelectItem value="sandblast">Пескоструйная обработка</SelectItem>
-                      <SelectItem value="custom">Индивидуальный дизайн</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="date">Предпочтительная дата</Label>
-                  <Input 
-                    id="date" 
-                    type="date"
-                    value={formData.date}
-                    onChange={(e) => setFormData({...formData, date: e.target.value})}
-                    required
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="comment">Комментарий (необязательно)</Label>
-                  <Textarea 
-                    id="comment" 
-                    placeholder="Расскажите о желаемом цвете, особых пожеланиях..."
-                    value={formData.comment}
-                    onChange={(e) => setFormData({...formData, comment: e.target.value})}
-                    rows={4}
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground" 
-                  size="lg"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? 'Отправка...' : 'Отправить заявку'}
-                </Button>
-              </form>
+          <Card className="overflow-hidden">
+            <CardContent className="p-12 text-center">
+              <Icon name="Send" className="mx-auto mb-6 text-primary" size={64} />
+              <h3 className="text-2xl font-bold mb-4">Telegram канал</h3>
+              <p className="text-muted-foreground mb-8">Напишите нам напрямую для записи и консультации</p>
+              <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg">
+                <a href="https://t.me/yarkiediski" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Send" className="mr-2" size={24} />
+                  Открыть Telegram
+                </a>
+              </Button>
             </CardContent>
           </Card>
-          <div className="mt-12 text-center">
-            <h3 className="text-2xl font-bold mb-6">Контакты</h3>
-            <div className="space-y-4">
-              <div className="flex items-center justify-center gap-3">
-                <Icon name="MapPin" className="text-primary" size={24} />
-                <span className="text-lg">м. Домодедовская, АТЦ "Москва"</span>
-              </div>
-              <div className="flex items-center justify-center gap-3">
-                <Icon name="Phone" className="text-primary" size={24} />
-                <span className="text-lg">+7 (958) 559-27-42</span>
-              </div>
-              <div className="flex items-center justify-center gap-3">
-                <Icon name="Clock" className="text-primary" size={24} />
-                <span className="text-lg">Пн-Сб: 10:00 - 21:00, Вс: 10:00 - 20:00</span>
-              </div>
-            </div>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card>
+              <CardContent className="p-6 text-center">
+                <Icon name="Phone" className="mx-auto mb-4 text-primary" size={40} />
+                <h4 className="font-bold mb-2">Телефон</h4>
+                <p className="text-muted-foreground">+7 (958) 559-27-42</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 text-center">
+                <Icon name="MapPin" className="mx-auto mb-4 text-primary" size={40} />
+                <h4 className="font-bold mb-2">Адрес</h4>
+                <p className="text-muted-foreground">м. Домодедовская<br/>АТЦ "Москва"</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 text-center">
+                <Icon name="Clock" className="mx-auto mb-4 text-primary" size={40} />
+                <h4 className="font-bold mb-2">Режим работы</h4>
+                <p className="text-muted-foreground">Пн-Сб: 10:00 - 21:00<br/>Вс: 10:00 - 20:00</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
