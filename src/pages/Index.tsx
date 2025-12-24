@@ -586,7 +586,7 @@ export default function Index() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Clock" className="text-primary" size={18} />
-                  <span>Пн-Сб: 10:00 - 21:00</span>
+                  <span>Пн-Вс: 10:00 - 21:00</span>
                 </div>
               </div>
             </div>
