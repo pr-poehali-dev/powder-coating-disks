@@ -152,123 +152,108 @@ export default function Index() {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Покрытия</h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">Варианты окраски</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300">
-              <div className="aspect-square relative overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/YCAJEA0YCQAASXJMZ2NBMXZZYWRMEMWSMQ/bucket/portfolio-1.jpg"
-                  alt="Глянцевое покрытие"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+            <div className="group relative overflow-hidden rounded-lg aspect-square">
+              <img 
+                src="https://cdn.poehali.dev/projects/39e5a194-0688-4d64-83fb-ccd68437310a/files/e650d0ff-4b39-4735-a562-b4d0e1fc61e7.jpg" 
+                alt="Золотая порошковая окраска диска"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Золото металлик</h3>
+                  <p className="text-muted-foreground">Премиум покрытие</p>
+                </div>
               </div>
-              <CardHeader>
-                <CardTitle>Глянцевое покрытие</CardTitle>
-                <CardDescription>Классический блеск и зеркальная поверхность</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300">
-              <div className="aspect-square relative overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/YCAJEA0YCQAASXJMZ2NBMXZZYWRMEMWSMQ/bucket/portfolio-2.jpg"
-                  alt="Матовое покрытие"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+            </div>
+            <div className="group relative overflow-hidden rounded-lg aspect-square">
+              <img 
+                src="https://cdn.poehali.dev/projects/39e5a194-0688-4d64-83fb-ccd68437310a/files/4a428a6f-611d-43e1-b06f-c2139593cdba.jpg" 
+                alt="Матовая черная порошковая окраска диска"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Матовый черный</h3>
+                  <p className="text-muted-foreground">Спортивный стиль</p>
+                </div>
               </div>
-              <CardHeader>
-                <CardTitle>Матовое покрытие</CardTitle>
-                <CardDescription>Стильная бархатистая текстура</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300">
-              <div className="aspect-square relative overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/YCAJEA0YCQAASXJMZ2NBMXZZYWRMEMWSMQ/bucket/portfolio-3.jpg"
-                  alt="Металлик"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+            </div>
+            <div className="group relative overflow-hidden rounded-lg aspect-square">
+              <img 
+                src="https://cdn.poehali.dev/projects/39e5a194-0688-4d64-83fb-ccd68437310a/files/d27003a7-8f65-4e3e-b759-511d0f503743.jpg" 
+                alt="Серебряная порошковая окраска диска"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">Серебро металлик</h3>
+                  <p className="text-muted-foreground">Классика</p>
+                </div>
               </div>
-              <CardHeader>
-                <CardTitle>Металлик</CardTitle>
-                <CardDescription>Эффектные металлические частицы</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300">
-              <div className="aspect-square relative overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/YCAJEA0YCQAASXJMZ2NBMXZZYWRMEMWSMQ/bucket/portfolio-4.jpg"
-                  alt="Хамелеон"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>Хамелеон</CardTitle>
-                <CardDescription>Цвет меняется в зависимости от угла обзора</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300">
-              <div className="aspect-square relative overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/YCAJEA0YCQAASXJMZ2NBMXZZYWRMEMWSMQ/bucket/portfolio-5.jpg"
-                  alt="Candy эффект"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>Candy эффект</CardTitle>
-                <CardDescription>Глубокий полупрозрачный цвет</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="overflow-hidden group cursor-pointer hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300">
-              <div className="aspect-square relative overflow-hidden">
-                <img
-                  src="https://cdn.poehali.dev/projects/YCAJEA0YCQAASXJMZ2NBMXZZYWRMEMWSMQ/bucket/portfolio-6.jpg"
-                  alt="Шагрень"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle>Шагрень</CardTitle>
-                <CardDescription>Текстурированная структурная поверхность</CardDescription>
-              </CardHeader>
-            </Card>
+            </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
       <section id="about" className="py-20 px-4 bg-muted/30">
-        <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">О студии</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg max-w-3xl mx-auto">
-            Яркие Диски — это команда профессионалов с многолетним опытом в порошковой окраске дисков. 
-            Мы используем только сертифицированные материалы европейского производства и современное оборудование.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="text-center hover:border-primary transition-all">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">О студии</h2>
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div className="order-2 md:order-1">
+              <h3 className="text-2xl font-bold mb-4 text-primary">Яркие Диски</h3>
+              <p className="text-lg text-muted-foreground mb-4">
+                Мы специализируемся на премиальной порошковой окраске автомобильных дисков с 2016 года. 
+                Наша студия находится в АТЦ "Москва" рядом с м. Домодедовская.
+              </p>
+              <p className="text-lg text-muted-foreground mb-4">
+                За годы работы мы обработали более 5000 комплектов дисков для владельцев автомобилей 
+                премиум-сегмента: Mercedes, BMW, Audi, Porsche, Bentley и других.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Используем только сертифицированные материалы европейских производителей 
+                и предоставляем гарантию 3 года на все виды покрытий.
+              </p>
+            </div>
+            <div className="order-1 md:order-2 flex justify-center">
+              <div className="relative w-full max-w-md">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-3xl blur-3xl"></div>
+                <div className="relative bg-gradient-to-br from-background to-muted border border-primary/20 rounded-3xl p-8 shadow-2xl">
+                  <img 
+                    src="https://cdn.poehali.dev/files/GigaChat (31).jpg" 
+                    alt="Яркие Диски - Логотип студии"
+                    className="w-full h-auto rounded-2xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card>
               <CardHeader>
-                <Icon name="CheckCircle2" className="mx-auto mb-4 text-primary" size={48} />
-                <CardTitle className="text-2xl">Качество</CardTitle>
-                <CardDescription className="text-base">Европейские порошковые краски премиум-класса</CardDescription>
+                <CardTitle className="flex items-center gap-3">
+                  <Icon name="Trophy" className="text-primary" size={28} />
+                  Качество
+                </CardTitle>
+                <CardDescription>Европейские материалы и технологии</CardDescription>
               </CardHeader>
             </Card>
-            <Card className="text-center hover:border-primary transition-all">
+            <Card>
               <CardHeader>
-                <Icon name="Zap" className="mx-auto mb-4 text-primary" size={48} />
-                <CardTitle className="text-2xl">Скорость</CardTitle>
-                <CardDescription className="text-base">Стандартный срок работы — 3-5 дней</CardDescription>
+                <CardTitle className="flex items-center gap-3">
+                  <Icon name="Clock" className="text-primary" size={28} />
+                  Скорость
+                </CardTitle>
+                <CardDescription>Окраска за 1-4 дня с момента приёма</CardDescription>
               </CardHeader>
             </Card>
-            <Card className="text-center hover:border-primary transition-all">
+            <Card>
               <CardHeader>
-                <Icon name="Shield" className="mx-auto mb-4 text-primary" size={48} />
-                <CardTitle className="text-2xl">Гарантия</CardTitle>
-                <CardDescription className="text-base">3 года на покрытие при соблюдении условий эксплуатации</CardDescription>
-              </CardHeader>
-            </Card>
-            <Card className="text-center hover:border-primary transition-all">
-              <CardHeader>
-                <Icon name="ThumbsUp" className="mx-auto mb-4 text-primary" size={48} />
-                <CardTitle className="text-2xl">Опыт</CardTitle>
-                <CardDescription className="text-base">Более 1000 успешно выполненных проектов</CardDescription>
+                <CardTitle className="flex items-center gap-3">
+                  <Icon name="Heart" className="text-primary" size={28} />
+                  Сервис
+                </CardTitle>
+                <CardDescription>Индивидуальный подход к каждому клиенту</CardDescription>
               </CardHeader>
             </Card>
           </div>
@@ -277,73 +262,45 @@ export default function Index() {
 
       {/* Technology Section */}
       <section id="technology" className="py-20 px-4">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-5xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Технология окраски</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Как мы создаём идеальное покрытие</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="hover:border-primary transition-all">
+          <p className="text-center text-muted-foreground mb-12 text-lg">Процесс работы от приёма до выдачи</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="text-center">
               <CardHeader>
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-primary">1</span>
                 </div>
-                <CardTitle>Подготовка</CardTitle>
-                <CardDescription>Пескоструйная обработка для полного удаления старого покрытия и коррозии</CardDescription>
+                <CardTitle>Осмотр и диагностика</CardTitle>
+                <CardDescription>Оценка состояния дисков, выявление дефектов</CardDescription>
               </CardHeader>
             </Card>
-            <Card className="hover:border-primary transition-all">
+            <Card className="text-center">
               <CardHeader>
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-primary">2</span>
                 </div>
-                <CardTitle>Грунтование</CardTitle>
-                <CardDescription>Нанесение специального грунта для максимальной адгезии</CardDescription>
+                <CardTitle>Подготовка</CardTitle>
+                <CardDescription>Пескоструйная обработка, удаление старого покрытия</CardDescription>
               </CardHeader>
             </Card>
-            <Card className="hover:border-primary transition-all">
+            <Card className="text-center">
               <CardHeader>
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-primary">3</span>
                 </div>
                 <CardTitle>Окраска</CardTitle>
-                <CardDescription>Напыление порошковой краски в специальной камере</CardDescription>
+                <CardDescription>Нанесение порошкового покрытия в камере</CardDescription>
               </CardHeader>
             </Card>
-            <Card className="hover:border-primary transition-all">
+            <Card className="text-center">
               <CardHeader>
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center mb-4">
                   <span className="text-2xl font-bold text-primary">4</span>
                 </div>
                 <CardTitle>Полимеризация</CardTitle>
-                <CardDescription>Запекание в печи при температуре 200°C для отверждения покрытия</CardDescription>
+                <CardDescription>Запекание при 200°C для максимальной прочности</CardDescription>
               </CardHeader>
-            </Card>
-          </div>
-          <div className="mt-12 max-w-3xl mx-auto">
-            <Card className="bg-primary/5 border-primary/20">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3 text-primary">
-                  <Icon name="Info" size={28} />
-                  Почему порошковая окраска?
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex gap-3">
-                  <Icon name="CheckCircle2" className="text-primary flex-shrink-0 mt-1" size={20} />
-                  <p><span className="font-semibold">Долговечность:</span> Покрытие служит в 3-5 раз дольше обычной краски</p>
-                </div>
-                <div className="flex gap-3">
-                  <Icon name="CheckCircle2" className="text-primary flex-shrink-0 mt-1" size={20} />
-                  <p><span className="font-semibold">Стойкость:</span> Устойчивость к сколам, царапинам и химическим реагентам</p>
-                </div>
-                <div className="flex gap-3">
-                  <Icon name="CheckCircle2" className="text-primary flex-shrink-0 mt-1" size={20} />
-                  <p><span className="font-semibold">Равномерность:</span> Идеально ровное покрытие без подтёков</p>
-                </div>
-                <div className="flex gap-3">
-                  <Icon name="CheckCircle2" className="text-primary flex-shrink-0 mt-1" size={20} />
-                  <p><span className="font-semibold">Экологичность:</span> Без токсичных растворителей и запаха</p>
-                </div>
-              </CardContent>
             </Card>
           </div>
         </div>
@@ -351,82 +308,81 @@ export default function Index() {
 
       {/* Prices Section */}
       <section id="prices" className="py-20 px-4 bg-muted/30">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-7xl">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Цены</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Прозрачная стоимость без скрытых платежей</p>
-
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-xl text-primary">Порошковая окраска (1 диск)</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">R13</span>
-                  <span className="font-semibold">1 800 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">R14</span>
-                  <span className="font-semibold">1 900 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">R15</span>
-                  <span className="font-semibold">2 000 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">R16</span>
-                  <span className="font-semibold">2 100 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">R17</span>
-                  <span className="font-semibold">2 200 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">R18</span>
-                  <span className="font-semibold">2 400 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">R19</span>
-                  <span className="font-semibold">2 600 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">R20</span>
-                  <span className="font-semibold">2 800 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">R21</span>
-                  <span className="font-semibold">3 200 руб.</span>
-                </div>
-                <div className="flex justify-between py-2">
-                  <span className="text-muted-foreground">R22</span>
-                  <span className="font-semibold">3 600 руб.</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-xl text-primary">Дополнительные работы</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Пескоструйная обработка (1 диск)</span>
-                  <span className="font-semibold">500 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Ремонт диска (прокатка)</span>
-                  <span className="font-semibold">от 1 500 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Сварка трещин (1 шт.)</span>
-                  <span className="font-semibold">от 2 000 руб.</span>
-                </div>
-                <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Алмазная проточка (1 диск)</span>
-                  <span className="font-semibold">3 000 руб.</span>
-                </div>
-              </CardContent>
-            </Card>
+          <p className="text-center text-muted-foreground mb-12 text-lg">Прозрачное ценообразование</p>
+          
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse bg-card rounded-lg overflow-hidden shadow-lg">
+              <thead>
+                <tr className="bg-primary text-primary-foreground">
+                  <th className="p-4 text-left font-bold border border-border">Вид покраски</th>
+                  <th className="p-4 text-center font-bold border border-border" colSpan={9}>Диаметр</th>
+                </tr>
+                <tr className="bg-primary/90 text-primary-foreground">
+                  <th className="p-3 text-left font-semibold border border-border"></th>
+                  <th className="p-3 text-center font-semibold border border-border">до 15</th>
+                  <th className="p-3 text-center font-semibold border border-border">16</th>
+                  <th className="p-3 text-center font-semibold border border-border">17</th>
+                  <th className="p-3 text-center font-semibold border border-border">18</th>
+                  <th className="p-3 text-center font-semibold border border-border">19</th>
+                  <th className="p-3 text-center font-semibold border border-border">20</th>
+                  <th className="p-3 text-center font-semibold border border-border">21</th>
+                  <th className="p-3 text-center font-semibold border border-border">22</th>
+                  <th className="p-3 text-center font-semibold border border-border">23</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="hover:bg-muted/50 transition">
+                  <td className="p-3 border border-border font-medium">В один цвет / комплект (4 шт.)</td>
+                  <td className="p-3 border border-border text-center">9 000</td>
+                  <td className="p-3 border border-border text-center">10 000</td>
+                  <td className="p-3 border border-border text-center">11 000</td>
+                  <td className="p-3 border border-border text-center">12 000</td>
+                  <td className="p-3 border border-border text-center">13 000</td>
+                  <td className="p-3 border border-border text-center">14 000</td>
+                  <td className="p-3 border border-border text-center">16 000</td>
+                  <td className="p-3 border border-border text-center">18 000</td>
+                  <td className="p-3 border border-border text-center">20 000</td>
+                </tr>
+                <tr className="hover:bg-muted/50 transition">
+                  <td className="p-3 border border-border font-medium">С цветным кантом / комплект (4 шт.)</td>
+                  <td className="p-3 border border-border text-center">13 000</td>
+                  <td className="p-3 border border-border text-center">14 000</td>
+                  <td className="p-3 border border-border text-center">15 000</td>
+                  <td className="p-3 border border-border text-center">16 000</td>
+                  <td className="p-3 border border-border text-center">17 000</td>
+                  <td className="p-3 border border-border text-center">18 000</td>
+                  <td className="p-3 border border-border text-center">20 000</td>
+                  <td className="p-3 border border-border text-center">22 000</td>
+                  <td className="p-3 border border-border text-center">24 000</td>
+                </tr>
+                <tr className="hover:bg-muted/50 transition">
+                  <td className="p-3 border border-border font-medium">С алмазной шлифовкой / комплект (4 шт.)</td>
+                  <td className="p-3 border border-border text-center">19 000</td>
+                  <td className="p-3 border border-border text-center">20 000</td>
+                  <td className="p-3 border border-border text-center">21 000</td>
+                  <td className="p-3 border border-border text-center">22 000</td>
+                  <td className="p-3 border border-border text-center">23 000</td>
+                  <td className="p-3 border border-border text-center">24 000</td>
+                  <td className="p-3 border border-border text-center">25 000</td>
+                  <td className="p-3 border border-border text-center">26 000</td>
+                  <td className="p-3 border border-border text-center">27 000</td>
+                </tr>
+                <tr className="bg-muted/30">
+                  <td className="p-3 border border-border font-medium">1 диск</td>
+                  <td colSpan={9} className="p-3 border border-border text-right text-muted-foreground">35%</td>
+                </tr>
+                <tr className="bg-muted/30">
+                  <td className="p-3 border border-border font-medium">2 диска</td>
+                  <td colSpan={9} className="p-3 border border-border text-right text-muted-foreground">60%</td>
+                </tr>
+                <tr className="bg-muted/30">
+                  <td className="p-3 border border-border font-medium">3 диска</td>
+                  <td colSpan={9} className="p-3 border border-border text-right text-muted-foreground">80%</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
           <div className="mt-12 grid md:grid-cols-2 gap-6">
@@ -472,89 +428,80 @@ export default function Index() {
                   <span className="font-semibold">6 000 руб.</span>
                 </div>
                 <div className="flex justify-between py-2 border-b border-border">
-                  <span className="text-muted-foreground">Покраска суппортов полный комплект (2 оси / 4 суппорта и 4 скобы)</span>
-                  <span className="font-semibold">12 000 руб.</span>
+                  <span className="text-muted-foreground">Нанесение логотипа на суппорта</span>
+                  <span className="font-semibold">2 000 руб.</span>
+                </div>
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Покраска дворников 2 шт.</span>
+                  <span className="font-semibold">2 500 руб.</span>
+                </div>
+                <div className="flex justify-between py-2">
+                  <span className="text-muted-foreground">Покраска выхлопных насадок</span>
+                  <span className="font-semibold">от 1 500 руб.</span>
                 </div>
               </CardContent>
             </Card>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-muted-foreground text-sm">* Ранее окрашенные диски порошком смывка от 5 000 руб.</p>
           </div>
         </div>
       </section>
 
       {/* Reviews Section */}
       <section id="reviews" className="py-20 px-4">
-        <div className="container mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Отзывы</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Что говорят наши клиенты</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <Card className="hover:shadow-lg transition-shadow">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Отзывы клиентов</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card>
               <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Icon name="User" className="text-primary" size={24} />
-                  </div>
-                  <div>
-                    <CardTitle className="text-lg">Александр М.</CardTitle>
-                    <div className="flex gap-1 mt-1">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <Icon key={star} name="Star" className="text-yellow-500 fill-yellow-500" size={16} />
-                      ))}
-                    </div>
-                  </div>
+                <div className="flex items-center gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-primary fill-primary" size={20} />
+                  ))}
                 </div>
+                <CardTitle>Александр</CardTitle>
+                <CardDescription>BMW X5</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  "Отличная работа! Покрасили диски в матовый черный. Выглядят просто супер. 
-                  Сделали быстро, качественно, цена адекватная. Рекомендую!"
+                  Отличная работа! Покрасили диски в матовый черный, результат превзошел ожидания. 
+                  Качество покрытия на высоте, уже 2 года — ни единой царапины.
                 </p>
               </CardContent>
             </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card>
               <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Icon name="User" className="text-primary" size={24} />
-                  </div>
-                  <div>
-                    <CardTitle className="text-lg">Дмитрий К.</CardTitle>
-                    <div className="flex gap-1 mt-1">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <Icon key={star} name="Star" className="text-yellow-500 fill-yellow-500" size={16} />
-                      ))}
-                    </div>
-                  </div>
+                <div className="flex items-center gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-primary fill-primary" size={20} />
+                  ))}
                 </div>
+                <CardTitle>Дмитрий</CardTitle>
+                <CardDescription>Mercedes E-Class</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  "Делал у ребят candy эффект. Получилось просто огонь! Диски переливаются на солнце. 
-                  Все знакомые спрашивают где делал. Профессионалы своего дела."
+                  Сделали хромирование дисков — выглядят как новые! Ребята профессионалы своего дела, 
+                  всё четко, в срок, цена адекватная.
                 </p>
               </CardContent>
             </Card>
-
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card>
               <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Icon name="User" className="text-primary" size={24} />
-                  </div>
-                  <div>
-                    <CardTitle className="text-lg">Сергей П.</CardTitle>
-                    <div className="flex gap-1 mt-1">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <Icon key={star} name="Star" className="text-yellow-500 fill-yellow-500" size={16} />
-                      ))}
-                    </div>
-                  </div>
+                <div className="flex items-center gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="text-primary fill-primary" size={20} />
+                  ))}
                 </div>
+                <CardTitle>Елена</CardTitle>
+                <CardDescription>Audi Q7</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  "Обращался для ремонта и покраски дисков после зимы. Сделали прокатку, заварили трещину, 
-                  покрасили. Диски как новые! Спасибо за качественную работу."
+                  Покрасили диски в золотой металлик — смотрятся шикарно! Очень довольна результатом, 
+                  всем рекомендую эту студию.
                 </p>
               </CardContent>
             </Card>
@@ -564,62 +511,44 @@ export default function Index() {
 
       {/* Booking Section */}
       <section id="booking" className="py-20 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Запись и контакты</h2>
-          <p className="text-center text-muted-foreground mb-12 text-lg">Свяжитесь с нами любым удобным способом</p>
-          
-          <div className="grid md:grid-cols-2 gap-8">
+        <div className="container mx-auto max-w-2xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">Записаться на окраску</h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Свяжитесь с нами в Telegram для быстрой записи и консультации
+          </p>
+          <Card className="overflow-hidden">
+            <CardContent className="p-12 text-center">
+              <Icon name="Send" className="mx-auto mb-6 text-primary" size={64} />
+              <h3 className="text-2xl font-bold mb-4">Telegram канал</h3>
+              <p className="text-muted-foreground mb-8">Напишите нам напрямую для записи и консультации</p>
+              <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-lg">
+                <a href="https://t.me/yarkiediski" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Send" className="mr-2" size={24} />
+                  Открыть Telegram
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Контактная информация</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <Icon name="MapPin" className="text-primary flex-shrink-0 mt-1" size={24} />
-                  <div>
-                    <p className="font-semibold">Адрес</p>
-                    <p className="text-muted-foreground">м. Домодедовская, АТЦ "Москва"</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Clock" className="text-primary flex-shrink-0 mt-1" size={24} />
-                  <div>
-                    <p className="font-semibold">Режим работы</p>
-                    <p className="text-muted-foreground">Пн-Сб: 9:00 - 20:00</p>
-                    <p className="text-muted-foreground">Вс: 10:00 - 18:00</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Phone" className="text-primary flex-shrink-0 mt-1" size={24} />
-                  <div>
-                    <p className="font-semibold">Телефон</p>
-                    <p className="text-muted-foreground">+7 (999) 123-45-67</p>
-                  </div>
-                </div>
+              <CardContent className="p-6 text-center">
+                <Icon name="Phone" className="mx-auto mb-4 text-primary" size={40} />
+                <h4 className="font-bold mb-2">Телефон</h4>
+                <p className="text-muted-foreground">+7 (958) 559-27-42</p>
               </CardContent>
             </Card>
-
             <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Записаться онлайн</CardTitle>
-                <CardDescription>Напишите нам в Telegram для записи</CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground">
-                  Самый быстрый способ записаться — написать нам в Telegram. 
-                  Мы ответим в течение нескольких минут и подберём удобное время.
-                </p>
-                <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <a href="https://t.me/yarkiediski" target="_blank" rel="noopener noreferrer">
-                    <Icon name="Send" className="mr-2" size={20} />
-                    Написать в Telegram
-                  </a>
-                </Button>
-                <div className="pt-4 border-t border-border">
-                  <p className="text-sm text-muted-foreground text-center">
-                    Или позвоните нам по телефону +7 (999) 123-45-67
-                  </p>
-                </div>
+              <CardContent className="p-6 text-center">
+                <Icon name="MapPin" className="mx-auto mb-4 text-primary" size={40} />
+                <h4 className="font-bold mb-2">Адрес</h4>
+                <p className="text-muted-foreground">м. Домодедовская<br/>АТЦ "Москва"</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 text-center">
+                <Icon name="Clock" className="mx-auto mb-4 text-primary" size={40} />
+                <h4 className="font-bold mb-2">Режим работы</h4>
+                <p className="text-muted-foreground">Пн-Сб: 10:00 - 21:00<br/>Вс: 10:00 - 20:00</p>
               </CardContent>
             </Card>
           </div>
@@ -627,10 +556,60 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 border-t border-border">
-        <div className="container mx-auto text-center text-muted-foreground">
-          <p>&copy; 2024 Яркие Диски. Все права защищены.</p>
-          <p className="mt-2 text-sm">Премиальная порошковая окраска автомобильных дисков в Москве</p>
+      <footer className="py-12 px-4 border-t border-border bg-muted/20">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Icon name="CircleDot" className="text-primary" size={32} />
+                <span className="text-xl font-bold">Яркие Диски</span>
+              </div>
+              <p className="text-muted-foreground">
+                Премиальная порошковая окраска автомобильных дисков в Москве
+              </p>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4">Юридическая информация</h3>
+              <div className="space-y-2 text-muted-foreground">
+                <p>ИП Ибрагимов Е.М.</p>
+                <p className="text-sm">ИНН: 622002925780</p>
+                <p className="text-sm">ОГРНИП: 325774600429786</p>
+                <div className="flex flex-col gap-2 mt-4">
+                  <a href="/privacy" className="hover:text-primary transition">Политика конфиденциальности</a>
+                  <a href="/terms" className="hover:text-primary transition">Пользовательское соглашение</a>
+                  <a href="/offer" className="hover:text-primary transition">Публичная оферта</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4">Контакты</h3>
+              <div className="space-y-3 text-muted-foreground">
+                <div className="flex items-start gap-2">
+                  <Icon name="MapPin" className="text-primary mt-1" size={18} />
+                  <span>м. Домодедовская, АТЦ "Москва"</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Phone" className="text-primary" size={18} />
+                  <a href="tel:+79585592742" className="hover:text-primary transition">+7 (958) 559-27-42</a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Send" className="text-primary" size={18} />
+                  <a href="https://t.me/yarkiediski" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">@yarkiediski</a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Clock" className="text-primary" size={18} />
+                  <span>Пн-Вс: 10:00 - 21:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-border pt-6 text-center text-muted-foreground text-sm">
+            <p>© 2024 ИП Ибрагимов Е.М. Все права защищены.</p>
+            <p className="mt-2">
+              Информация на сайте не является публичной офертой. Окончательная стоимость услуг 
+              определяется после осмотра дисков.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
