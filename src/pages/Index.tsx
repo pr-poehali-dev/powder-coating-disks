@@ -391,13 +391,14 @@ export default function Index() {
                 <CardTitle className="text-xl text-primary">Дополнительно:</CardTitle>
               </CardHeader>
               <CardContent className="space-y-2">
-
+                <div className="flex justify-between py-2 border-b border-border">
+                  <span className="text-muted-foreground">Цветные лаки алюмахром подбор цвета</span>
+                  <span className="font-semibold">+ 3 000 руб.</span>
+                </div>
                 <div className="flex justify-between py-2 border-b border-border">
                   <span className="text-muted-foreground">Высверливание фальш болтов</span>
                   <span className="font-semibold">+ 1 000 руб.</span>
                 </div>
-
-
                 <div className="flex justify-between py-2">
                   <span className="text-muted-foreground">Снятие / Установка датчиков</span>
                   <span className="font-semibold">1500 руб.</span>
