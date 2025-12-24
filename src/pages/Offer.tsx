@@ -263,6 +263,12 @@ export default function Offer() {
               <strong>Индивидуальный предприниматель:</strong> Ибрагимов Е.М.
             </p>
             <p>
+              <strong>ИНН:</strong> 622002925780
+            </p>
+            <p>
+              <strong>ОГРНИП:</strong> 325774600429786
+            </p>
+            <p>
               <strong>Телефон:</strong> +7 (958) 559-27-42
             </p>
             <p>

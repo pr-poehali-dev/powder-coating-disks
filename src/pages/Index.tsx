@@ -560,6 +560,8 @@ export default function Index() {
               <h3 className="font-bold mb-4">Юридическая информация</h3>
               <div className="space-y-2 text-muted-foreground">
                 <p>ИП Ибрагимов Е.М.</p>
+                <p className="text-sm">ИНН: 622002925780</p>
+                <p className="text-sm">ОГРНИП: 325774600429786</p>
                 <div className="flex flex-col gap-2 mt-4">
                   <a href="/privacy" className="hover:text-primary transition">Политика конфиденциальности</a>
                   <a href="/terms" className="hover:text-primary transition">Пользовательское соглашение</a>
