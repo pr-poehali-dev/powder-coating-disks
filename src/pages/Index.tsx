@@ -244,7 +244,7 @@ export default function Index() {
                   <Icon name="Clock" className="text-primary" size={28} />
                   Скорость
                 </CardTitle>
-                <CardDescription>Окраска за 2-3 дня с момента приёма</CardDescription>
+                <CardDescription>Окраска за 1-4 дня с момента приёма</CardDescription>
               </CardHeader>
             </Card>
             <Card>
