@@ -544,10 +544,58 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 border-t border-border">
-        <div className="container mx-auto text-center text-muted-foreground">
-          <p>© 2024 Яркие Диски. Все права защищены.</p>
-          <p className="mt-2">Премиальная порошковая окраска автомобильных дисков в Москве</p>
+      <footer className="py-12 px-4 border-t border-border bg-muted/20">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <Icon name="CircleDot" className="text-primary" size={32} />
+                <span className="text-xl font-bold">Яркие Диски</span>
+              </div>
+              <p className="text-muted-foreground">
+                Премиальная порошковая окраска автомобильных дисков в Москве
+              </p>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4">Юридическая информация</h3>
+              <div className="space-y-2 text-muted-foreground">
+                <p>ИП Ибрагимов Е.М.</p>
+                <div className="flex flex-col gap-2 mt-4">
+                  <a href="/privacy" className="hover:text-primary transition">Политика конфиденциальности</a>
+                  <a href="/terms" className="hover:text-primary transition">Пользовательское соглашение</a>
+                  <a href="/offer" className="hover:text-primary transition">Публичная оферта</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 className="font-bold mb-4">Контакты</h3>
+              <div className="space-y-3 text-muted-foreground">
+                <div className="flex items-start gap-2">
+                  <Icon name="MapPin" className="text-primary mt-1" size={18} />
+                  <span>м. Домодедовская, АТЦ "Москва"</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Phone" className="text-primary" size={18} />
+                  <a href="tel:+79585592742" className="hover:text-primary transition">+7 (958) 559-27-42</a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Send" className="text-primary" size={18} />
+                  <a href="https://t.me/yarkiediski" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition">@yarkiediski</a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Clock" className="text-primary" size={18} />
+                  <span>Пн-Сб: 10:00 - 21:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="border-t border-border pt-6 text-center text-muted-foreground text-sm">
+            <p>© 2024 ИП Ибрагимов Е.М. Все права защищены.</p>
+            <p className="mt-2">
+              Информация на сайте не является публичной офертой. Окончательная стоимость услуг 
+              определяется после осмотра дисков.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
