@@ -444,7 +444,7 @@ export default function Index() {
           </div>
 
           <div className="mt-8 text-center">
-            <p className="text-muted-foreground text-sm">* Ранее окрашенные диски порошком смывка от 5 000 руб.</p>
+            <p className="text-muted-foreground text-sm">* Ранее окрашенные диски порошком смывка 1-2 шт.-1000 р. 3-4 шт.-1500р.</p>
           </div>
         </div>
       </section>
