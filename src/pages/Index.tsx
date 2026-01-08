@@ -541,7 +541,7 @@ export default function Index() {
               <CardContent className="p-6 text-center">
                 <Icon name="MapPin" className="mx-auto mb-4 text-primary" size={40} />
                 <h4 className="font-bold mb-2">Адрес</h4>
-                <p className="text-muted-foreground">м. Домодедовская<br/>АТЦ "Москва"</p>
+                <p className="text-muted-foreground">м. Домодедовская, АТЦ "Москва" Каширское шоссе 61 корп. 3А</p>
               </CardContent>
             </Card>
             <Card>
