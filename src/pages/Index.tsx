@@ -541,17 +541,7 @@ export default function Index() {
               <CardContent className="p-6 text-center">
                 <Icon name="MapPin" className="mx-auto mb-4 text-primary" size={40} />
                 <h4 className="font-bold mb-2">Адрес</h4>
-                <p className="text-muted-foreground mb-4">м. Домодедовская<br/>АТЦ "Москва"</p>
-                <Button asChild variant="outline" size="sm" className="w-full">
-                  <a 
-                    href="https://yandex.ru/maps/?rtext=~55.612582,37.717562" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <Icon name="Navigation" className="mr-2" size={16} />
-                    Проложить маршрут
-                  </a>
-                </Button>
+                <p className="text-muted-foreground">м. Домодедовская<br/>АТЦ "Москва"</p>
               </CardContent>
             </Card>
             <Card>
